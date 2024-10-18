@@ -3,6 +3,11 @@ cmake_minimum_required (VERSION 2.6)
 #https://www.eriksmistad.no/getting-started-with-google-test-on-ubuntu/
 #https://github.com/google/googletest/blob/master/googletest/docs/primer.md
 
+set(GTEST_ROOT "path/to/gtest")
+set(GTEST_INCLUDE_DIR "${GTEST_ROOT}/include")
+set(GTEST_LIBRARY "${GTEST_ROOT}/lib/gtest.lib")
+set(GTEST_MAIN_LIBRARY "${GTEST_ROOT}/lib/gtest_main.lib")
+find_package(Threads REQUIRED)
 find_package(GTest REQUIRED)
 include_directories(${GTEST_INCLUDE_DIRS})
 
