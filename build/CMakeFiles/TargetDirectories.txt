@@ -1,4 +1,7 @@
-C:/Users/Naushik/Downloads/csc582-asg1-master/582/build/CMakeFiles/ALL_BUILD.dir
-C:/Users/Naushik/Downloads/csc582-asg1-master/582/build/CMakeFiles/ZERO_CHECK.dir
-C:/Users/Naushik/Downloads/csc582-asg1-master/582/build/source/FourBitAdder/intern/CMakeFiles/proj1_FourBitAdder.dir
-C:/Users/Naushik/Downloads/csc582-asg1-master/582/build/tests/gtests/CMakeFiles/LogicGatesGTests_gtests.dir
+C:/Users/hiran/Downloads/csc582-asg1-master/csc582-asg1-master/build/CMakeFiles/ALL_BUILD.dir
+C:/Users/hiran/Downloads/csc582-asg1-master/csc582-asg1-master/build/CMakeFiles/ZERO_CHECK.dir
+C:/Users/hiran/Downloads/csc582-asg1-master/csc582-asg1-master/build/source/FourBitAdder/intern/CMakeFiles/proj1_FourBitAdder.dir
+C:/Users/hiran/Downloads/csc582-asg1-master/csc582-asg1-master/build/tests/gtests/CMakeFiles/LogicGatesGTests_gtests.dir
+C:/Users/hiran/Downloads/csc582-asg1-master/csc582-asg1-master/build/tests/gtests/CMakeFiles/HalfAdderGTests_gtests.dir
+C:/Users/hiran/Downloads/csc582-asg1-master/csc582-asg1-master/build/tests/gtests/CMakeFiles/FullAdderGTests_gtests.dir
+C:/Users/hiran/Downloads/csc582-asg1-master/csc582-asg1-master/build/tests/gtests/CMakeFiles/FourBitAdderGTests_gtests.dir

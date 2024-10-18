@@ -1,0 +1,10 @@
+^C:\USERS\HIRAN\DOWNLOADS\CSC582-ASG1-MASTER\CSC582-ASG1-MASTER\BUILD\CMAKEFILES\D2B0FBA61A45052409674B7FBD95E427\GENERATE.STAMP.RULE
+setlocal
+"D:\Program Files\cmake\bin\cmake.exe" -SC:/Users/hiran/Downloads/csc582-asg1-master/csc582-asg1-master -BC:/Users/hiran/Downloads/csc582-asg1-master/csc582-asg1-master/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/hiran/Downloads/csc582-asg1-master/csc582-asg1-master/build/CSC582ProjectOne.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

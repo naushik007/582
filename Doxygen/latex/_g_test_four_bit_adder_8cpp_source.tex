@@ -1,0 +1,31 @@
+\doxysection{GTest\+Four\+Bit\+Adder.\+cpp}
+\hypertarget{_g_test_four_bit_adder_8cpp_source}{}\label{_g_test_four_bit_adder_8cpp_source}\index{tests/gtests/GTestFourBitAdder.cpp@{tests/gtests/GTestFourBitAdder.cpp}}
+\mbox{\hyperlink{_g_test_four_bit_adder_8cpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_g_test_four_bit_adder_8cpp_source_l00001}00001\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_four_bit_adder_8h}{FourBitAdder.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{_g_test_four_bit_adder_8cpp_source_l00002}00002\ }
+\DoxyCodeLine{\Hypertarget{_g_test_four_bit_adder_8cpp_source_l00003}00003\ \textcolor{comment}{//\ Test\ the\ Four-\/Bit\ Adder}}
+\DoxyCodeLine{\Hypertarget{_g_test_four_bit_adder_8cpp_source_l00004}\mbox{\hyperlink{_g_test_four_bit_adder_8cpp_a4905927bc1c4385731e29837b2c49f8c}{00004}}\ \mbox{\hyperlink{_g_test_four_bit_adder_8cpp_a4905927bc1c4385731e29837b2c49f8c}{TEST}}(FourBitAdderTest,\ BasicTest)\ \{}
+\DoxyCodeLine{\Hypertarget{_g_test_four_bit_adder_8cpp_source_l00005}00005\ \ \ \ \ \mbox{\hyperlink{class_four_bit_adder}{FourBitAdder}}\ fourBitAdder;}
+\DoxyCodeLine{\Hypertarget{_g_test_four_bit_adder_8cpp_source_l00006}00006\ \ \ \ \ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{short}\ \textcolor{keywordtype}{int}\ a[4]\ =\ \{1,\ 0,\ 1,\ 1\};\ \textcolor{comment}{//\ 1101\ (13\ in\ decimal)}}
+\DoxyCodeLine{\Hypertarget{_g_test_four_bit_adder_8cpp_source_l00007}00007\ \ \ \ \ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{short}\ \textcolor{keywordtype}{int}\ b[4]\ =\ \{1,\ 1,\ 0,\ 1\};\ \textcolor{comment}{//\ 1011\ (11\ in\ decimal)}}
+\DoxyCodeLine{\Hypertarget{_g_test_four_bit_adder_8cpp_source_l00008}00008\ \ \ \ \ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{short}\ \textcolor{keywordtype}{int}\ sum[4];}
+\DoxyCodeLine{\Hypertarget{_g_test_four_bit_adder_8cpp_source_l00009}00009\ \ \ \ \ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{short}\ \textcolor{keywordtype}{int}\ carryOut;}
+\DoxyCodeLine{\Hypertarget{_g_test_four_bit_adder_8cpp_source_l00010}00010\ }
+\DoxyCodeLine{\Hypertarget{_g_test_four_bit_adder_8cpp_source_l00011}00011\ \ \ \ \ fourBitAdder.\mbox{\hyperlink{class_four_bit_adder_ad6466b2fc8b4aba2d8c207ea46e00167}{setInputs}}(a,\ b,\ 0);}
+\DoxyCodeLine{\Hypertarget{_g_test_four_bit_adder_8cpp_source_l00012}00012\ \ \ \ \ fourBitAdder.\mbox{\hyperlink{class_four_bit_adder_a074a1e7227fddaaf44f30077399da07f}{getResult}}(sum,\ carryOut);}
+\DoxyCodeLine{\Hypertarget{_g_test_four_bit_adder_8cpp_source_l00013}00013\ }
+\DoxyCodeLine{\Hypertarget{_g_test_four_bit_adder_8cpp_source_l00014}00014\ \ \ \ \ \textcolor{comment}{//\ Expect\ the\ result\ of\ 13\ +\ 11\ =\ 24\ (11000\ in\ binary)}}
+\DoxyCodeLine{\Hypertarget{_g_test_four_bit_adder_8cpp_source_l00015}00015\ \ \ \ \ EXPECT\_EQ(sum[0],\ 0);\ }
+\DoxyCodeLine{\Hypertarget{_g_test_four_bit_adder_8cpp_source_l00016}00016\ \ \ \ \ EXPECT\_EQ(sum[1],\ 0);}
+\DoxyCodeLine{\Hypertarget{_g_test_four_bit_adder_8cpp_source_l00017}00017\ \ \ \ \ EXPECT\_EQ(sum[2],\ 0);}
+\DoxyCodeLine{\Hypertarget{_g_test_four_bit_adder_8cpp_source_l00018}00018\ \ \ \ \ EXPECT\_EQ(sum[3],\ 1);}
+\DoxyCodeLine{\Hypertarget{_g_test_four_bit_adder_8cpp_source_l00019}00019\ \ \ \ \ EXPECT\_EQ(carryOut,\ 1);}
+\DoxyCodeLine{\Hypertarget{_g_test_four_bit_adder_8cpp_source_l00020}00020\ \}}
+\DoxyCodeLine{\Hypertarget{_g_test_four_bit_adder_8cpp_source_l00021}00021\ }
+\DoxyCodeLine{\Hypertarget{_g_test_four_bit_adder_8cpp_source_l00022}\mbox{\hyperlink{_g_test_four_bit_adder_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}{00022}}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{_g_test_four_bit_adder_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}{main}}(\textcolor{keywordtype}{int}\ argc,\ \textcolor{keywordtype}{char}\ **argv)\ \{}
+\DoxyCodeLine{\Hypertarget{_g_test_four_bit_adder_8cpp_source_l00023}00023\ \ \ \ \ ::testing::InitGoogleTest(\&argc,\ argv);}
+\DoxyCodeLine{\Hypertarget{_g_test_four_bit_adder_8cpp_source_l00024}00024\ \ \ \ \ \textcolor{keywordflow}{return}\ RUN\_ALL\_TESTS();}
+\DoxyCodeLine{\Hypertarget{_g_test_four_bit_adder_8cpp_source_l00025}00025\ \}}
+
+\end{DoxyCode}

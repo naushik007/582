@@ -1,0 +1,122 @@
+\doxysection{Logic\+Gates.\+cpp}
+\hypertarget{_logic_gates_8cpp_source}{}\label{_logic_gates_8cpp_source}\index{source/FourBitAdder/intern/LogicGates.cpp@{source/FourBitAdder/intern/LogicGates.cpp}}
+\mbox{\hyperlink{_logic_gates_8cpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_logic_gates_8cpp_source_l00001}00001\ \textcolor{comment}{/*}}
+\DoxyCodeLine{\Hypertarget{_logic_gates_8cpp_source_l00002}00002\ \textcolor{comment}{\ *\ LogicGates.cpp}}
+\DoxyCodeLine{\Hypertarget{_logic_gates_8cpp_source_l00003}00003\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{\Hypertarget{_logic_gates_8cpp_source_l00004}00004\ \textcolor{comment}{\ *\ \ Created\ on:\ Jun\ 14,\ 2020}}
+\DoxyCodeLine{\Hypertarget{_logic_gates_8cpp_source_l00005}00005\ \textcolor{comment}{\ *\ \ \ \ \ \ Author:\ brad}}
+\DoxyCodeLine{\Hypertarget{_logic_gates_8cpp_source_l00006}00006\ \textcolor{comment}{\ */}}
+\DoxyCodeLine{\Hypertarget{_logic_gates_8cpp_source_l00007}00007\ }
+\DoxyCodeLine{\Hypertarget{_logic_gates_8cpp_source_l00008}00008\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_logic_gates_8h}{../../FourBitAdder/intern/LogicGates.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{_logic_gates_8cpp_source_l00009}00009\ }
+\DoxyCodeLine{\Hypertarget{_logic_gates_8cpp_source_l00010}00010\ \textcolor{comment}{/****\ AND\ ****/}}
+\DoxyCodeLine{\Hypertarget{_logic_gates_8cpp_source_l00011}00011\ }
+\DoxyCodeLine{\Hypertarget{_logic_gates_8cpp_source_l00015}\mbox{\hyperlink{class_a_n_d_ae1ba822c56226a96a2cd78659a85fe52}{00015}}\ \mbox{\hyperlink{class_a_n_d_ae1ba822c56226a96a2cd78659a85fe52}{AND::AND}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{short}\ \textcolor{keywordtype}{int}\ \textcolor{keywordtype}{id})}
+\DoxyCodeLine{\Hypertarget{_logic_gates_8cpp_source_l00016}00016\ \{}
+\DoxyCodeLine{\Hypertarget{_logic_gates_8cpp_source_l00017}00017\ \ \ \ \ \mbox{\hyperlink{class_a_n_d_a99b92a38d758ce7c79b82af4bef61b67}{m\_strID}}\ =\ std::to\_string(\textcolor{keywordtype}{id})\ +\ \textcolor{stringliteral}{"{}AND"{}};}
+\DoxyCodeLine{\Hypertarget{_logic_gates_8cpp_source_l00018}00018\ \}}
+\DoxyCodeLine{\Hypertarget{_logic_gates_8cpp_source_l00019}00019\ }
+\DoxyCodeLine{\Hypertarget{_logic_gates_8cpp_source_l00023}\mbox{\hyperlink{class_a_n_d_a10556fbaba3e396f113b02bc5b3411c8}{00023}}\ \mbox{\hyperlink{class_a_n_d_a10556fbaba3e396f113b02bc5b3411c8}{AND::\string~AND}}()}
+\DoxyCodeLine{\Hypertarget{_logic_gates_8cpp_source_l00024}00024\ \{}
+\DoxyCodeLine{\Hypertarget{_logic_gates_8cpp_source_l00025}00025\ \}}
+\DoxyCodeLine{\Hypertarget{_logic_gates_8cpp_source_l00026}00026\ }
+\DoxyCodeLine{\Hypertarget{_logic_gates_8cpp_source_l00027}\mbox{\hyperlink{class_a_n_d_a0cbf1ff9790cfe81ea95cee3b66c2121}{00027}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_a_n_d_a0cbf1ff9790cfe81ea95cee3b66c2121}{AND::update}}()}
+\DoxyCodeLine{\Hypertarget{_logic_gates_8cpp_source_l00028}00028\ \{}
+\DoxyCodeLine{\Hypertarget{_logic_gates_8cpp_source_l00029}00029\ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{class_abstract_gate_a9874fa389d0a7f917c712c65a2a98dd9}{m\_usiIn1}})}
+\DoxyCodeLine{\Hypertarget{_logic_gates_8cpp_source_l00030}00030\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_logic_gates_8cpp_source_l00031}00031\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{class_abstract_gate_a1aa803df35289549ed9f7807a0eae714}{m\_usiIn2}})}
+\DoxyCodeLine{\Hypertarget{_logic_gates_8cpp_source_l00032}00032\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_logic_gates_8cpp_source_l00033}00033\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_abstract_gate_a69b4525042eca0f9cdb891c42ebe5843}{m\_usiOut}}\ =\ 1;}
+\DoxyCodeLine{\Hypertarget{_logic_gates_8cpp_source_l00034}00034\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_logic_gates_8cpp_source_l00035}00035\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}}
+\DoxyCodeLine{\Hypertarget{_logic_gates_8cpp_source_l00036}00036\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_logic_gates_8cpp_source_l00037}00037\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_abstract_gate_a69b4525042eca0f9cdb891c42ebe5843}{m\_usiOut}}\ =\ 0;}
+\DoxyCodeLine{\Hypertarget{_logic_gates_8cpp_source_l00038}00038\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_logic_gates_8cpp_source_l00039}00039\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_logic_gates_8cpp_source_l00040}00040\ \ \ \ \ \textcolor{keywordflow}{else}}
+\DoxyCodeLine{\Hypertarget{_logic_gates_8cpp_source_l00041}00041\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_logic_gates_8cpp_source_l00042}00042\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_abstract_gate_a69b4525042eca0f9cdb891c42ebe5843}{m\_usiOut}}\ =\ 0;}
+\DoxyCodeLine{\Hypertarget{_logic_gates_8cpp_source_l00043}00043\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_logic_gates_8cpp_source_l00044}00044\ \}}
+\DoxyCodeLine{\Hypertarget{_logic_gates_8cpp_source_l00045}00045\ }
+\DoxyCodeLine{\Hypertarget{_logic_gates_8cpp_source_l00046}\mbox{\hyperlink{class_a_n_d_a2484fd1c13a1b399747f6685845c09cc}{00046}}\ std::string\ \mbox{\hyperlink{class_a_n_d_a2484fd1c13a1b399747f6685845c09cc}{AND::repr}}()}
+\DoxyCodeLine{\Hypertarget{_logic_gates_8cpp_source_l00047}00047\ \{}
+\DoxyCodeLine{\Hypertarget{_logic_gates_8cpp_source_l00048}00048\ \ \ \ \ std::string\ rp\ =\ \mbox{\hyperlink{class_abstract_gate_a36e644775aec02cb54715d0cf020db72}{AbstractGate::repr}}();}
+\DoxyCodeLine{\Hypertarget{_logic_gates_8cpp_source_l00049}00049\ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{stringliteral}{"{}id:\ "{}}\ +\ \mbox{\hyperlink{class_a_n_d_a99b92a38d758ce7c79b82af4bef61b67}{m\_strID}}\ +\ \textcolor{stringliteral}{"{}\(\backslash\)n\(\backslash\)t"{}}\ +\ rp;}
+\DoxyCodeLine{\Hypertarget{_logic_gates_8cpp_source_l00050}00050\ \}}
+\DoxyCodeLine{\Hypertarget{_logic_gates_8cpp_source_l00051}00051\ }
+\DoxyCodeLine{\Hypertarget{_logic_gates_8cpp_source_l00052}00052\ }
+\DoxyCodeLine{\Hypertarget{_logic_gates_8cpp_source_l00053}00053\ \textcolor{comment}{/****\ NAND\ ****/}}
+\DoxyCodeLine{\Hypertarget{_logic_gates_8cpp_source_l00054}00054\ }
+\DoxyCodeLine{\Hypertarget{_logic_gates_8cpp_source_l00058}\mbox{\hyperlink{class_n_a_n_d_a5964ef091d1442b898182cd04cb34989}{00058}}\ \mbox{\hyperlink{class_n_a_n_d_a5964ef091d1442b898182cd04cb34989}{NAND::NAND}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{short}\ \textcolor{keywordtype}{int}\ \textcolor{keywordtype}{id})}
+\DoxyCodeLine{\Hypertarget{_logic_gates_8cpp_source_l00059}00059\ \{}
+\DoxyCodeLine{\Hypertarget{_logic_gates_8cpp_source_l00060}00060\ \ \ \ \ \mbox{\hyperlink{class_n_a_n_d_a4723360c062eddeeb24144e3e0e52987}{m\_strID}}\ =\ std::to\_string(\textcolor{keywordtype}{id})\ +\ \textcolor{stringliteral}{"{}NAND"{}};}
+\DoxyCodeLine{\Hypertarget{_logic_gates_8cpp_source_l00061}00061\ \}}
+\DoxyCodeLine{\Hypertarget{_logic_gates_8cpp_source_l00062}00062\ }
+\DoxyCodeLine{\Hypertarget{_logic_gates_8cpp_source_l00066}\mbox{\hyperlink{class_n_a_n_d_a708a2ba40e132c44349c55701d5d45fd}{00066}}\ \mbox{\hyperlink{class_n_a_n_d_a708a2ba40e132c44349c55701d5d45fd}{NAND::\string~NAND}}()}
+\DoxyCodeLine{\Hypertarget{_logic_gates_8cpp_source_l00067}00067\ \{}
+\DoxyCodeLine{\Hypertarget{_logic_gates_8cpp_source_l00068}00068\ \}}
+\DoxyCodeLine{\Hypertarget{_logic_gates_8cpp_source_l00069}00069\ }
+\DoxyCodeLine{\Hypertarget{_logic_gates_8cpp_source_l00070}\mbox{\hyperlink{class_n_a_n_d_ab4ceb2ff0c9c02abcf41205557051ab2}{00070}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_n_a_n_d_ab4ceb2ff0c9c02abcf41205557051ab2}{NAND::update}}()}
+\DoxyCodeLine{\Hypertarget{_logic_gates_8cpp_source_l00071}00071\ \{}
+\DoxyCodeLine{\Hypertarget{_logic_gates_8cpp_source_l00072}00072\ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{class_abstract_gate_a9874fa389d0a7f917c712c65a2a98dd9}{m\_usiIn1}})}
+\DoxyCodeLine{\Hypertarget{_logic_gates_8cpp_source_l00073}00073\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_logic_gates_8cpp_source_l00074}00074\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{class_abstract_gate_a1aa803df35289549ed9f7807a0eae714}{m\_usiIn2}})}
+\DoxyCodeLine{\Hypertarget{_logic_gates_8cpp_source_l00075}00075\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_logic_gates_8cpp_source_l00076}00076\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_abstract_gate_a69b4525042eca0f9cdb891c42ebe5843}{m\_usiOut}}\ =\ 0;}
+\DoxyCodeLine{\Hypertarget{_logic_gates_8cpp_source_l00077}00077\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_logic_gates_8cpp_source_l00078}00078\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}}
+\DoxyCodeLine{\Hypertarget{_logic_gates_8cpp_source_l00079}00079\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_logic_gates_8cpp_source_l00080}00080\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_abstract_gate_a69b4525042eca0f9cdb891c42ebe5843}{m\_usiOut}}\ =\ 1;}
+\DoxyCodeLine{\Hypertarget{_logic_gates_8cpp_source_l00081}00081\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_logic_gates_8cpp_source_l00082}00082\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_logic_gates_8cpp_source_l00083}00083\ \ \ \ \ \textcolor{keywordflow}{else}}
+\DoxyCodeLine{\Hypertarget{_logic_gates_8cpp_source_l00084}00084\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_logic_gates_8cpp_source_l00085}00085\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_abstract_gate_a69b4525042eca0f9cdb891c42ebe5843}{m\_usiOut}}\ =\ 1;}
+\DoxyCodeLine{\Hypertarget{_logic_gates_8cpp_source_l00086}00086\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_logic_gates_8cpp_source_l00087}00087\ \}}
+\DoxyCodeLine{\Hypertarget{_logic_gates_8cpp_source_l00088}00088\ }
+\DoxyCodeLine{\Hypertarget{_logic_gates_8cpp_source_l00089}\mbox{\hyperlink{class_n_a_n_d_a7337633d9d731152c38c6697257f80e2}{00089}}\ std::string\ \mbox{\hyperlink{class_n_a_n_d_a7337633d9d731152c38c6697257f80e2}{NAND::repr}}()}
+\DoxyCodeLine{\Hypertarget{_logic_gates_8cpp_source_l00090}00090\ \{}
+\DoxyCodeLine{\Hypertarget{_logic_gates_8cpp_source_l00091}00091\ \ \ \ \ std::string\ rp\ =\ \mbox{\hyperlink{class_abstract_gate_a36e644775aec02cb54715d0cf020db72}{AbstractGate::repr}}();}
+\DoxyCodeLine{\Hypertarget{_logic_gates_8cpp_source_l00092}00092\ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{stringliteral}{"{}id:\ "{}}\ +\ \mbox{\hyperlink{class_n_a_n_d_a4723360c062eddeeb24144e3e0e52987}{m\_strID}}\ +\ \textcolor{stringliteral}{"{}\(\backslash\)n\(\backslash\)t"{}}\ +\ rp;}
+\DoxyCodeLine{\Hypertarget{_logic_gates_8cpp_source_l00093}00093\ \}}
+\DoxyCodeLine{\Hypertarget{_logic_gates_8cpp_source_l00094}00094\ }
+\DoxyCodeLine{\Hypertarget{_logic_gates_8cpp_source_l00095}00095\ \textcolor{comment}{/****\ OR\ ****/}}
+\DoxyCodeLine{\Hypertarget{_logic_gates_8cpp_source_l00096}00096\ }
+\DoxyCodeLine{\Hypertarget{_logic_gates_8cpp_source_l00100}\mbox{\hyperlink{class_o_r_af9823b272de348526aa2d7c7f52f19b2}{00100}}\ \mbox{\hyperlink{class_o_r_af9823b272de348526aa2d7c7f52f19b2}{OR::OR}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{short}\ \textcolor{keywordtype}{int}\ \textcolor{keywordtype}{id})}
+\DoxyCodeLine{\Hypertarget{_logic_gates_8cpp_source_l00101}00101\ \{}
+\DoxyCodeLine{\Hypertarget{_logic_gates_8cpp_source_l00102}00102\ \ \ \ \ \mbox{\hyperlink{class_o_r_ae785ae13807d2a4fb8678e9324ed9255}{m\_strID}}\ =\ std::to\_string(\textcolor{keywordtype}{id})\ +\ \textcolor{stringliteral}{"{}OR"{}};}
+\DoxyCodeLine{\Hypertarget{_logic_gates_8cpp_source_l00103}00103\ \}}
+\DoxyCodeLine{\Hypertarget{_logic_gates_8cpp_source_l00104}00104\ }
+\DoxyCodeLine{\Hypertarget{_logic_gates_8cpp_source_l00108}\mbox{\hyperlink{class_o_r_aed572b0a185eb60b47faba5feb696799}{00108}}\ \mbox{\hyperlink{class_o_r_aed572b0a185eb60b47faba5feb696799}{OR::\string~OR}}()}
+\DoxyCodeLine{\Hypertarget{_logic_gates_8cpp_source_l00109}00109\ \{}
+\DoxyCodeLine{\Hypertarget{_logic_gates_8cpp_source_l00110}00110\ \}}
+\DoxyCodeLine{\Hypertarget{_logic_gates_8cpp_source_l00111}00111\ }
+\DoxyCodeLine{\Hypertarget{_logic_gates_8cpp_source_l00112}\mbox{\hyperlink{class_o_r_ad3fd809642a4d965caec523904d137fe}{00112}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_o_r_ad3fd809642a4d965caec523904d137fe}{OR::update}}()}
+\DoxyCodeLine{\Hypertarget{_logic_gates_8cpp_source_l00113}00113\ \{}
+\DoxyCodeLine{\Hypertarget{_logic_gates_8cpp_source_l00114}00114\ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{class_abstract_gate_a9874fa389d0a7f917c712c65a2a98dd9}{m\_usiIn1}})}
+\DoxyCodeLine{\Hypertarget{_logic_gates_8cpp_source_l00115}00115\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_logic_gates_8cpp_source_l00116}00116\ \ \ \ \ \ \ \ \mbox{\hyperlink{class_abstract_gate_a69b4525042eca0f9cdb891c42ebe5843}{m\_usiOut}}\ =\ 1;}
+\DoxyCodeLine{\Hypertarget{_logic_gates_8cpp_source_l00117}00117\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_logic_gates_8cpp_source_l00118}00118\ \ \ \ \ \textcolor{keywordflow}{else}\ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{class_abstract_gate_a1aa803df35289549ed9f7807a0eae714}{m\_usiIn2}})}
+\DoxyCodeLine{\Hypertarget{_logic_gates_8cpp_source_l00119}00119\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_logic_gates_8cpp_source_l00120}00120\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_abstract_gate_a69b4525042eca0f9cdb891c42ebe5843}{m\_usiOut}}\ =\ 1;}
+\DoxyCodeLine{\Hypertarget{_logic_gates_8cpp_source_l00121}00121\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_logic_gates_8cpp_source_l00122}00122\ \ \ \ \ \textcolor{keywordflow}{else}}
+\DoxyCodeLine{\Hypertarget{_logic_gates_8cpp_source_l00123}00123\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_logic_gates_8cpp_source_l00124}00124\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_abstract_gate_a69b4525042eca0f9cdb891c42ebe5843}{m\_usiOut}}\ =\ 0;}
+\DoxyCodeLine{\Hypertarget{_logic_gates_8cpp_source_l00125}00125\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_logic_gates_8cpp_source_l00126}00126\ \}}
+\DoxyCodeLine{\Hypertarget{_logic_gates_8cpp_source_l00127}00127\ }
+\DoxyCodeLine{\Hypertarget{_logic_gates_8cpp_source_l00128}\mbox{\hyperlink{class_o_r_ac49f7dcebbc858ba806e4d3cd31664c1}{00128}}\ std::string\ \mbox{\hyperlink{class_o_r_ac49f7dcebbc858ba806e4d3cd31664c1}{OR::repr}}()}
+\DoxyCodeLine{\Hypertarget{_logic_gates_8cpp_source_l00129}00129\ \{}
+\DoxyCodeLine{\Hypertarget{_logic_gates_8cpp_source_l00130}00130\ \ \ \ \ std::string\ rp\ =\ \mbox{\hyperlink{class_abstract_gate_a36e644775aec02cb54715d0cf020db72}{AbstractGate::repr}}();}
+\DoxyCodeLine{\Hypertarget{_logic_gates_8cpp_source_l00131}00131\ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{stringliteral}{"{}id:\ "{}}\ +\ \mbox{\hyperlink{class_o_r_ae785ae13807d2a4fb8678e9324ed9255}{m\_strID}}\ +\ \textcolor{stringliteral}{"{}\(\backslash\)n\(\backslash\)t"{}}\ +\ rp;}
+\DoxyCodeLine{\Hypertarget{_logic_gates_8cpp_source_l00132}00132\ \}}
+\DoxyCodeLine{\Hypertarget{_logic_gates_8cpp_source_l00133}00133\ }
+\DoxyCodeLine{\Hypertarget{_logic_gates_8cpp_source_l00134}00134\ }
+
+\end{DoxyCode}

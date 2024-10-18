@@ -1,0 +1,59 @@
+\doxysection{Logic\+Gates.\+h}
+\hypertarget{_logic_gates_8h_source}{}\label{_logic_gates_8h_source}\index{source/FourBitAdder/intern/LogicGates.h@{source/FourBitAdder/intern/LogicGates.h}}
+\mbox{\hyperlink{_logic_gates_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_logic_gates_8h_source_l00001}00001\ \textcolor{comment}{/*}}
+\DoxyCodeLine{\Hypertarget{_logic_gates_8h_source_l00002}00002\ \textcolor{comment}{\ *\ LogicGates.h}}
+\DoxyCodeLine{\Hypertarget{_logic_gates_8h_source_l00003}00003\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{\Hypertarget{_logic_gates_8h_source_l00004}00004\ \textcolor{comment}{\ *\ \ Created\ on:\ Jun\ 14,\ 2020}}
+\DoxyCodeLine{\Hypertarget{_logic_gates_8h_source_l00005}00005\ \textcolor{comment}{\ *\ \ \ \ \ \ Author:\ brad}}
+\DoxyCodeLine{\Hypertarget{_logic_gates_8h_source_l00006}00006\ \textcolor{comment}{\ */}}
+\DoxyCodeLine{\Hypertarget{_logic_gates_8h_source_l00007}00007\ }
+\DoxyCodeLine{\Hypertarget{_logic_gates_8h_source_l00008}00008\ \textcolor{preprocessor}{\#ifndef\ \_LOGICGATES\_H\_}}
+\DoxyCodeLine{\Hypertarget{_logic_gates_8h_source_l00009}00009\ \textcolor{preprocessor}{\#define\ \_LOGICGATES\_H\_}}
+\DoxyCodeLine{\Hypertarget{_logic_gates_8h_source_l00010}00010\ }
+\DoxyCodeLine{\Hypertarget{_logic_gates_8h_source_l00011}00011\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{\Hypertarget{_logic_gates_8h_source_l00012}00012\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_abstract_gate_8h}{../../FourBitAdder/intern/AbstractGate.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{_logic_gates_8h_source_l00013}00013\ }
+\DoxyCodeLine{\Hypertarget{_logic_gates_8h_source_l00014}\mbox{\hyperlink{class_a_n_d}{00014}}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_a_n_d}{AND}}:\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_abstract_gate}{AbstractGate}}}
+\DoxyCodeLine{\Hypertarget{_logic_gates_8h_source_l00015}00015\ \{}
+\DoxyCodeLine{\Hypertarget{_logic_gates_8h_source_l00016}00016\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{_logic_gates_8h_source_l00020}00020\ \ \ \ \ \mbox{\hyperlink{class_a_n_d_ae1ba822c56226a96a2cd78659a85fe52}{AND}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{short}\ \textcolor{keywordtype}{int});}
+\DoxyCodeLine{\Hypertarget{_logic_gates_8h_source_l00021}00021\ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{class_a_n_d_a10556fbaba3e396f113b02bc5b3411c8}{\string~AND}}();}
+\DoxyCodeLine{\Hypertarget{_logic_gates_8h_source_l00022}00022\ }
+\DoxyCodeLine{\Hypertarget{_logic_gates_8h_source_l00023}00023\ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{\Hypertarget{_logic_gates_8h_source_l00024}\mbox{\hyperlink{class_a_n_d_a99b92a38d758ce7c79b82af4bef61b67}{00024}}\ \ \ \ \ std::string\ \mbox{\hyperlink{class_a_n_d_a99b92a38d758ce7c79b82af4bef61b67}{m\_strID}};}
+\DoxyCodeLine{\Hypertarget{_logic_gates_8h_source_l00025}00025\ }
+\DoxyCodeLine{\Hypertarget{_logic_gates_8h_source_l00026}00026\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_a_n_d_a0cbf1ff9790cfe81ea95cee3b66c2121}{update}}();}
+\DoxyCodeLine{\Hypertarget{_logic_gates_8h_source_l00027}00027\ \ \ \ \ \textcolor{keyword}{virtual}\ std::string\ \mbox{\hyperlink{class_a_n_d_a2484fd1c13a1b399747f6685845c09cc}{repr}}();}
+\DoxyCodeLine{\Hypertarget{_logic_gates_8h_source_l00028}00028\ \};}
+\DoxyCodeLine{\Hypertarget{_logic_gates_8h_source_l00029}00029\ }
+\DoxyCodeLine{\Hypertarget{_logic_gates_8h_source_l00030}\mbox{\hyperlink{class_n_a_n_d}{00030}}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_n_a_n_d}{NAND}}:\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_abstract_gate}{AbstractGate}}}
+\DoxyCodeLine{\Hypertarget{_logic_gates_8h_source_l00031}00031\ \{}
+\DoxyCodeLine{\Hypertarget{_logic_gates_8h_source_l00032}00032\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{_logic_gates_8h_source_l00033}00033\ \ \ \ \ \mbox{\hyperlink{class_n_a_n_d_a5964ef091d1442b898182cd04cb34989}{NAND}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{short}\ \textcolor{keywordtype}{int});}
+\DoxyCodeLine{\Hypertarget{_logic_gates_8h_source_l00034}00034\ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{class_n_a_n_d_a708a2ba40e132c44349c55701d5d45fd}{\string~NAND}}();}
+\DoxyCodeLine{\Hypertarget{_logic_gates_8h_source_l00035}00035\ }
+\DoxyCodeLine{\Hypertarget{_logic_gates_8h_source_l00036}00036\ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{\Hypertarget{_logic_gates_8h_source_l00037}\mbox{\hyperlink{class_n_a_n_d_a4723360c062eddeeb24144e3e0e52987}{00037}}\ \ \ \ \ std::string\ \mbox{\hyperlink{class_n_a_n_d_a4723360c062eddeeb24144e3e0e52987}{m\_strID}};}
+\DoxyCodeLine{\Hypertarget{_logic_gates_8h_source_l00038}00038\ }
+\DoxyCodeLine{\Hypertarget{_logic_gates_8h_source_l00039}00039\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_n_a_n_d_ab4ceb2ff0c9c02abcf41205557051ab2}{update}}();}
+\DoxyCodeLine{\Hypertarget{_logic_gates_8h_source_l00040}00040\ \ \ \ \ \textcolor{keyword}{virtual}\ std::string\ \mbox{\hyperlink{class_n_a_n_d_a7337633d9d731152c38c6697257f80e2}{repr}}();}
+\DoxyCodeLine{\Hypertarget{_logic_gates_8h_source_l00041}00041\ \};}
+\DoxyCodeLine{\Hypertarget{_logic_gates_8h_source_l00042}00042\ }
+\DoxyCodeLine{\Hypertarget{_logic_gates_8h_source_l00043}\mbox{\hyperlink{class_o_r}{00043}}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_o_r}{OR}}:\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_abstract_gate}{AbstractGate}}}
+\DoxyCodeLine{\Hypertarget{_logic_gates_8h_source_l00044}00044\ \{}
+\DoxyCodeLine{\Hypertarget{_logic_gates_8h_source_l00045}00045\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{_logic_gates_8h_source_l00046}00046\ \ \ \ \ \mbox{\hyperlink{class_o_r_af9823b272de348526aa2d7c7f52f19b2}{OR}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{short}\ \textcolor{keywordtype}{int});}
+\DoxyCodeLine{\Hypertarget{_logic_gates_8h_source_l00047}00047\ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{class_o_r_aed572b0a185eb60b47faba5feb696799}{\string~OR}}();}
+\DoxyCodeLine{\Hypertarget{_logic_gates_8h_source_l00048}00048\ }
+\DoxyCodeLine{\Hypertarget{_logic_gates_8h_source_l00049}00049\ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{\Hypertarget{_logic_gates_8h_source_l00050}\mbox{\hyperlink{class_o_r_ae785ae13807d2a4fb8678e9324ed9255}{00050}}\ \ \ \ \ std::string\ \mbox{\hyperlink{class_o_r_ae785ae13807d2a4fb8678e9324ed9255}{m\_strID}};}
+\DoxyCodeLine{\Hypertarget{_logic_gates_8h_source_l00051}00051\ }
+\DoxyCodeLine{\Hypertarget{_logic_gates_8h_source_l00052}00052\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_o_r_ad3fd809642a4d965caec523904d137fe}{update}}();}
+\DoxyCodeLine{\Hypertarget{_logic_gates_8h_source_l00053}00053\ \ \ \ \ \textcolor{keyword}{virtual}\ std::string\ \mbox{\hyperlink{class_o_r_ac49f7dcebbc858ba806e4d3cd31664c1}{repr}}();}
+\DoxyCodeLine{\Hypertarget{_logic_gates_8h_source_l00054}00054\ \};}
+\DoxyCodeLine{\Hypertarget{_logic_gates_8h_source_l00055}00055\ }
+\DoxyCodeLine{\Hypertarget{_logic_gates_8h_source_l00056}00056\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{/*\ \_LOGICGATES\_H\_\ */}\textcolor{preprocessor}{}}
+
+\end{DoxyCode}

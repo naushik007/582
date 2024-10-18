@@ -1,0 +1,56 @@
+\doxysection{Four\+Bit\+Adder.\+h}
+\hypertarget{_four_bit_adder_8h_source}{}\label{_four_bit_adder_8h_source}\index{source/FourBitAdder/FourBitAdder.h@{source/FourBitAdder/FourBitAdder.h}}
+\mbox{\hyperlink{_four_bit_adder_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_four_bit_adder_8h_source_l00001}00001\ }
+\DoxyCodeLine{\Hypertarget{_four_bit_adder_8h_source_l00002}00002\ \textcolor{preprocessor}{\#ifndef\ \_FOURBITADDER\_H\_}}
+\DoxyCodeLine{\Hypertarget{_four_bit_adder_8h_source_l00003}00003\ \textcolor{preprocessor}{\#define\ \_FOURBITADDER\_H\_}}
+\DoxyCodeLine{\Hypertarget{_four_bit_adder_8h_source_l00004}00004\ }
+\DoxyCodeLine{\Hypertarget{_four_bit_adder_8h_source_l00005}00005\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_logic_gates_8h}{LogicGates.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{_four_bit_adder_8h_source_l00006}00006\ }
+\DoxyCodeLine{\Hypertarget{_four_bit_adder_8h_source_l00007}00007\ \textcolor{comment}{//\ Half-\/Adder\ class\ definition}}
+\DoxyCodeLine{\Hypertarget{_four_bit_adder_8h_source_l00008}\mbox{\hyperlink{class_half_adder}{00008}}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_half_adder}{HalfAdder}}}
+\DoxyCodeLine{\Hypertarget{_four_bit_adder_8h_source_l00009}00009\ \{}
+\DoxyCodeLine{\Hypertarget{_four_bit_adder_8h_source_l00010}00010\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{_four_bit_adder_8h_source_l00011}00011\ \ \ \ \ \mbox{\hyperlink{class_half_adder_a5b4e3b83180cc65c20cac6c83f38c893}{HalfAdder}}();}
+\DoxyCodeLine{\Hypertarget{_four_bit_adder_8h_source_l00012}00012\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_half_adder_a28cb6a0861228574e095c4baa69d9884}{setInputs}}(\textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{short}\ \textcolor{keywordtype}{int}\ a,\ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{short}\ \textcolor{keywordtype}{int}\ b);}
+\DoxyCodeLine{\Hypertarget{_four_bit_adder_8h_source_l00013}00013\ \ \ \ \ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{short}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_half_adder_a38e0126a4cbd25cfdaf72e7399f09743}{getSum}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{\Hypertarget{_four_bit_adder_8h_source_l00014}00014\ \ \ \ \ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{short}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_half_adder_a79ea9823ff446a95032b933f914c511c}{getCarry}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{\Hypertarget{_four_bit_adder_8h_source_l00015}00015\ }
+\DoxyCodeLine{\Hypertarget{_four_bit_adder_8h_source_l00016}00016\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{\Hypertarget{_four_bit_adder_8h_source_l00017}00017\ \ \ \ \ \mbox{\hyperlink{class_n_a_n_d}{NAND}}\ m\_nand1,\ m\_nand2,\ m\_nand3,\ m\_nand4;}
+\DoxyCodeLine{\Hypertarget{_four_bit_adder_8h_source_l00018}00018\ \ \ \ \ \mbox{\hyperlink{class_a_n_d}{AND}}\ m\_and;}
+\DoxyCodeLine{\Hypertarget{_four_bit_adder_8h_source_l00019}00019\ \ \ \ \ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{short}\ \textcolor{keywordtype}{int}\ sum,\ carry;}
+\DoxyCodeLine{\Hypertarget{_four_bit_adder_8h_source_l00020}00020\ \};}
+\DoxyCodeLine{\Hypertarget{_four_bit_adder_8h_source_l00021}00021\ }
+\DoxyCodeLine{\Hypertarget{_four_bit_adder_8h_source_l00022}00022\ \textcolor{comment}{//\ Full-\/Adder\ class\ definition}}
+\DoxyCodeLine{\Hypertarget{_four_bit_adder_8h_source_l00023}\mbox{\hyperlink{class_full_adder}{00023}}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_full_adder}{FullAdder}}}
+\DoxyCodeLine{\Hypertarget{_four_bit_adder_8h_source_l00024}00024\ \{}
+\DoxyCodeLine{\Hypertarget{_four_bit_adder_8h_source_l00025}00025\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{_four_bit_adder_8h_source_l00026}00026\ \ \ \ \ \mbox{\hyperlink{class_full_adder_ad51cec7a937f0ea2c8ae62459c28c357}{FullAdder}}();}
+\DoxyCodeLine{\Hypertarget{_four_bit_adder_8h_source_l00027}00027\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_full_adder_aa8f550ae2580482d1f035b54e4ecb94c}{setInputs}}(\textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{short}\ \textcolor{keywordtype}{int}\ a,\ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{short}\ \textcolor{keywordtype}{int}\ b,\ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{short}\ \textcolor{keywordtype}{int}\ carryIn);}
+\DoxyCodeLine{\Hypertarget{_four_bit_adder_8h_source_l00028}00028\ \ \ \ \ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{short}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_full_adder_a76f17d3ec3d7a30daf57abe32887151d}{getSum}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{\Hypertarget{_four_bit_adder_8h_source_l00029}00029\ \ \ \ \ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{short}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_full_adder_a47c1410c16af30365e3ab6d34d63fe63}{getCarryOut}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{\Hypertarget{_four_bit_adder_8h_source_l00030}00030\ }
+\DoxyCodeLine{\Hypertarget{_four_bit_adder_8h_source_l00031}00031\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{\Hypertarget{_four_bit_adder_8h_source_l00032}00032\ \ \ \ \ \mbox{\hyperlink{class_half_adder}{HalfAdder}}\ m\_halfAdder1,\ m\_halfAdder2;}
+\DoxyCodeLine{\Hypertarget{_four_bit_adder_8h_source_l00033}00033\ \ \ \ \ \mbox{\hyperlink{class_o_r}{OR}}\ m\_or;}
+\DoxyCodeLine{\Hypertarget{_four_bit_adder_8h_source_l00034}00034\ \ \ \ \ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{short}\ \textcolor{keywordtype}{int}\ sum,\ carryOut;}
+\DoxyCodeLine{\Hypertarget{_four_bit_adder_8h_source_l00035}00035\ \};}
+\DoxyCodeLine{\Hypertarget{_four_bit_adder_8h_source_l00036}00036\ }
+\DoxyCodeLine{\Hypertarget{_four_bit_adder_8h_source_l00037}00037\ \textcolor{comment}{//\ Four-\/Bit\ Adder\ class\ definition}}
+\DoxyCodeLine{\Hypertarget{_four_bit_adder_8h_source_l00038}\mbox{\hyperlink{class_four_bit_adder}{00038}}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_four_bit_adder}{FourBitAdder}}}
+\DoxyCodeLine{\Hypertarget{_four_bit_adder_8h_source_l00039}00039\ \{}
+\DoxyCodeLine{\Hypertarget{_four_bit_adder_8h_source_l00040}00040\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{_four_bit_adder_8h_source_l00041}00041\ \ \ \ \ \mbox{\hyperlink{class_four_bit_adder_a8575adf608fefefe06624e4a758a1418}{FourBitAdder}}();}
+\DoxyCodeLine{\Hypertarget{_four_bit_adder_8h_source_l00042}00042\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_four_bit_adder_ad6466b2fc8b4aba2d8c207ea46e00167}{setInputs}}(\textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{short}\ \textcolor{keywordtype}{int}\ a[],\ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{short}\ \textcolor{keywordtype}{int}\ b[],\ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{short}\ \textcolor{keywordtype}{int}\ carryIn);}
+\DoxyCodeLine{\Hypertarget{_four_bit_adder_8h_source_l00043}00043\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_four_bit_adder_a074a1e7227fddaaf44f30077399da07f}{getResult}}(\textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{short}\ \textcolor{keywordtype}{int}\ sum[],\ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{short}\ \textcolor{keywordtype}{int}\ \&carryOut)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{\Hypertarget{_four_bit_adder_8h_source_l00044}00044\ }
+\DoxyCodeLine{\Hypertarget{_four_bit_adder_8h_source_l00045}00045\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{\Hypertarget{_four_bit_adder_8h_source_l00046}00046\ \ \ \ \ \mbox{\hyperlink{class_full_adder}{FullAdder}}\ m\_fullAdders[4];}
+\DoxyCodeLine{\Hypertarget{_four_bit_adder_8h_source_l00047}00047\ \ \ \ \ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{short}\ \textcolor{keywordtype}{int}\ sum[4],\ carryOut;}
+\DoxyCodeLine{\Hypertarget{_four_bit_adder_8h_source_l00048}00048\ \};}
+\DoxyCodeLine{\Hypertarget{_four_bit_adder_8h_source_l00049}00049\ }
+\DoxyCodeLine{\Hypertarget{_four_bit_adder_8h_source_l00050}00050\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{/*\ \_FOURBITADDER\_H\_\ */}\textcolor{preprocessor}{}}
+
+\end{DoxyCode}

@@ -1,0 +1,3 @@
+﻿  Building Custom Rule C:/Users/hiran/Downloads/csc582-asg1-master/csc582-asg1-master/tests/gtests/CMakeLists.txt
+  GTestLogicGates.cpp
+LINK : fatal error LNK1104: cannot open file '..\..\source\FourBitAdder\intern\Debug\proj1_FourBitAdder.lib'

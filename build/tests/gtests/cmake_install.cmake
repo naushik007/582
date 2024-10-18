@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/Naushik/Downloads/csc582-asg1-master/582/tests/gtests
+# Install script for directory: C:/Users/hiran/Downloads/csc582-asg1-master/csc582-asg1-master/tests/gtests
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -32,9 +32,3 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
   set(CMAKE_CROSSCOMPILING "FALSE")
 endif()
 
-string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
-       "${CMAKE_INSTALL_MANIFEST_FILES}")
-if(CMAKE_INSTALL_LOCAL_ONLY)
-  file(WRITE "C:/Users/Naushik/Downloads/csc582-asg1-master/582/build/tests/gtests/install_local_manifest.txt"
-     "${CMAKE_INSTALL_MANIFEST_CONTENT}")
-endif()

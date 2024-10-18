@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\hiran\Downloads\csc582-asg1-master\csc582-asg1-master\tests\gtests\GTestFullAdder.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\hiran\Downloads\csc582-asg1-master\csc582-asg1-master\source\FourBitAdder\intern\AbstractGate.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\hiran\Downloads\csc582-asg1-master\csc582-asg1-master\source\FourBitAdder\intern\LogicGates.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\hiran\Downloads\csc582-asg1-master\csc582-asg1-master\source\FourBitAdder\FourBitAdder.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\hiran\Downloads\csc582-asg1-master\csc582-asg1-master\tests\gtests\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{5F10A878-062A-3C1D-854B-7A35DE7549A0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{B316CBD9-CAC9-3D65-B7EC-EF42FDB15F9B}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

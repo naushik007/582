@@ -1,0 +1,35 @@
+﻿  Building Custom Rule C:/Users/hiran/Downloads/csc582-asg1-master/csc582-asg1-master/source/FourBitAdder/intern/CMakeLists.txt
+  AbstractGate.cpp
+  LogicGates.cpp
+  FourBitAdder.cpp
+  Generating Code...
+C:\Users\hiran\Downloads\csc582-asg1-master\csc582-asg1-master\source\FourBitAdder\FourBitAdder.h(12,29): error C2504: 'AbstractDevice': base class undefined
+  (compiling source file '../../../../source/FourBitAdder/intern/FourBitAdder.cpp')
+  
+C:\Users\hiran\Downloads\csc582-asg1-master\csc582-asg1-master\source\FourBitAdder\FourBitAdder.h(14,18): error C2061: syntax error: identifier 'Gate'
+  (compiling source file '../../../../source/FourBitAdder/intern/FourBitAdder.cpp')
+  
+C:\Users\hiran\Downloads\csc582-asg1-master\csc582-asg1-master\source\FourBitAdder\FourBitAdder.h(19,15): error C2143: syntax error: missing ';' before '*'
+  (compiling source file '../../../../source/FourBitAdder/intern/FourBitAdder.cpp')
+  
+C:\Users\hiran\Downloads\csc582-asg1-master\csc582-asg1-master\source\FourBitAdder\FourBitAdder.h(19,5): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+  (compiling source file '../../../../source/FourBitAdder/intern/FourBitAdder.cpp')
+  
+C:\Users\hiran\Downloads\csc582-asg1-master\csc582-asg1-master\source\FourBitAdder\FourBitAdder.h(19,25): error C2238: unexpected token(s) preceding ';'
+  (compiling source file '../../../../source/FourBitAdder/intern/FourBitAdder.cpp')
+  
+C:\Users\hiran\Downloads\csc582-asg1-master\csc582-asg1-master\source\FourBitAdder\intern\FourBitAdder.cpp(7,28): error C2065: 'Gate': undeclared identifier
+C:\Users\hiran\Downloads\csc582-asg1-master\csc582-asg1-master\source\FourBitAdder\intern\FourBitAdder.cpp(7,34): error C2065: 'A': undeclared identifier
+C:\Users\hiran\Downloads\csc582-asg1-master\csc582-asg1-master\source\FourBitAdder\intern\FourBitAdder.cpp(7,40): error C2065: 'Gate': undeclared identifier
+C:\Users\hiran\Downloads\csc582-asg1-master\csc582-asg1-master\source\FourBitAdder\intern\FourBitAdder.cpp(7,46): error C2065: 'B': undeclared identifier
+C:\Users\hiran\Downloads\csc582-asg1-master\csc582-asg1-master\source\FourBitAdder\intern\FourBitAdder.cpp(7,15): error C7550: 'FourBitAdder::{ctor}': the qualified name in this context names a constructor, not a type
+C:\Users\hiran\Downloads\csc582-asg1-master\csc582-asg1-master\source\FourBitAdder\intern\FourBitAdder.cpp(7,52): error C2059: syntax error: '{'
+C:\Users\hiran\Downloads\csc582-asg1-master\csc582-asg1-master\source\FourBitAdder\intern\FourBitAdder.cpp(7,52): error C2143: syntax error: missing ';' before '{'
+C:\Users\hiran\Downloads\csc582-asg1-master\csc582-asg1-master\source\FourBitAdder\intern\FourBitAdder.cpp(7,52): error C2447: '{': missing function header (old-style formal list?)
+C:\Users\hiran\Downloads\csc582-asg1-master\csc582-asg1-master\source\FourBitAdder\intern\FourBitAdder.cpp(17,20): error C2039: 'out_of_range': is not a member of 'std'
+      D:\Program Files\Visual Studio\VC\Tools\MSVC\14.41.34120\include\string(23,1):
+      see declaration of 'std'
+  
+C:\Users\hiran\Downloads\csc582-asg1-master\csc582-asg1-master\source\FourBitAdder\intern\FourBitAdder.cpp(17,20): error C3861: 'out_of_range': identifier not found
+C:\Users\hiran\Downloads\csc582-asg1-master\csc582-asg1-master\source\FourBitAdder\intern\FourBitAdder.cpp(19,12): error C2065: 'adders': undeclared identifier
+C:\Users\hiran\Downloads\csc582-asg1-master\csc582-asg1-master\source\FourBitAdder\intern\FourBitAdder.cpp(23,12): error C2065: 'adders': undeclared identifier

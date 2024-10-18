@@ -1,0 +1,10 @@
+^C:\USERS\HIRAN\DOWNLOADS\CSC582-ASG1-MASTER\CSC582-ASG1-MASTER\TESTS\GTESTS\CMAKELISTS.TXT
+setlocal
+"D:\Program Files\cmake\bin\cmake.exe" -SC:/Users/hiran/Downloads/csc582-asg1-master/csc582-asg1-master -BC:/Users/hiran/Downloads/csc582-asg1-master/csc582-asg1-master/build --check-stamp-file C:/Users/hiran/Downloads/csc582-asg1-master/csc582-asg1-master/build/tests/gtests/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

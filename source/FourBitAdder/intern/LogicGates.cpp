@@ -113,7 +113,7 @@ void OR::update()
 {
     if (m_usiIn1)
     {
-       m_usiOut = 1;
+        m_usiOut = 1;
     }
     else if (m_usiIn2)
     {
@@ -121,7 +121,7 @@ void OR::update()
     }
     else
     {
-    	m_usiOut = 0;
+        m_usiOut = 0;
     }
 }
 
