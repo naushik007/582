@@ -1,0 +1,4 @@
+C:/Users/Naushik/Downloads/csc582-asg1-master/582/build/CMakeFiles/ALL_BUILD.dir
+C:/Users/Naushik/Downloads/csc582-asg1-master/582/build/CMakeFiles/ZERO_CHECK.dir
+C:/Users/Naushik/Downloads/csc582-asg1-master/582/build/source/FourBitAdder/intern/CMakeFiles/proj1_FourBitAdder.dir
+C:/Users/Naushik/Downloads/csc582-asg1-master/582/build/tests/gtests/CMakeFiles/LogicGatesGTests_gtests.dir

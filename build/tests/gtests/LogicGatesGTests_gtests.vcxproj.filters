@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\Naushik\Downloads\csc582-asg1-master\582\tests\gtests\GTestLogicGates.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\Naushik\Downloads\csc582-asg1-master\582\source\FourBitAdder\intern\AbstractGate.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Naushik\Downloads\csc582-asg1-master\582\source\FourBitAdder\intern\LogicGates.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Naushik\Downloads\csc582-asg1-master\582\tests\gtests\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{DA0B5B98-94DD-339E-8593-CF4DD182D282}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{D2B0012E-0F6D-31E7-8899-F82A604B14C8}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
